@@ -3,8 +3,8 @@
 
 using namespace Vollachia;
 
-Renderer* mainRenderer;
+Renderer mainRenderer;
 
 int init(){
-    mainRenderer = mainRenderer.init("Pandamonium", SDL_RENDERER_ACCELERATED, SDL_WINDOW_OPENGL)
+    mainRenderer = *mainRenderer.init("Pandamonium", SDL_RENDERER_ACCELERATED, SDL_WINDOW_OPENGL);
 }
